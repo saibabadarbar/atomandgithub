@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+{%extends 'myapp/base.html'%}
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+<div class="container" align='center'>
+{% if sent %}
+<h1>Thanks for Providing Information</h1>
+<h2>Enter Next devotee</h2>
+{%else%}
+<h1>Thank you for your feed back</h1>
+{%endif%}<hr>
+  <img src="{% static "images/r10.jpg" %}" alt="baba" width="200" height="260"> <br>Jai Sairam<br><hr>
+  <br><br><br><br><br>
+    <br><br><br><br><br>  <br><br><br><br><br>  <br><br><br><br><br>  <br><br><br><br><br>
+    <br><br><br><br><br>
+      <br><br><br><br><br>  <br><br><br><br><br>  <br><br><br><br><br>  <br><br><br><br><br>
+</div>
+{%endblock%}

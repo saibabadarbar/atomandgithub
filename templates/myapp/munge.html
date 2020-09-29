@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{%extends 'myapp/base.html'%}
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+<div class="container">
+
+     <h1 id="col">Lakshman Govind Munge</h1><hr>
+     <p style="color:white;">
+        <img src="{% static "images/munge1.jpg" %}" alt="baba" width=100%>
+          <img src="{% static "images/munge2.jpg" %}" alt="baba" width=100%>
+        <br> <br><hr>
+ <p style="color:white;">
+
+
+
+
+   {%endblock%}

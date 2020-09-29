@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{%extends 'myapp/base.html'%}
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+<div class="container">
+
+     <h1 id="col">Who is Saibaba</h1><hr>
+     <img src="{% static "images/images.jpg" %}" alt="baba" width=100%>
+     <br>Who is Saibaba<br><hr>
+     <p style="color:white;">
+
+  <br>
+      <img src="{% static "images/sai1.gif" %}" alt="baba" width=100%>
+        <img src="{% static "images/sai2.gif" %}" alt="baba" width=100%>
+        <img src="{% static "images/sai3.gif" %}" alt="baba" width=100%>
+        <img src="{% static "images/sai4.gif" %}" alt="baba" width=100%>
+        <img src="{% static "images/sai5.gif" %}" alt="baba" width=100%>
+        <img src="{% static "images/sai6.gif" %}" alt="baba" width=100%>
+
+
+
+<br><br>
+  {%endblock%}

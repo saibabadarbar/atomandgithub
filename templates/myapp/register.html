@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'myapp/base.html'%}
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+
+<div class="container" align="center">
+<h1>Devotees Registration form for Feedback</h1><br><br>
+{{form.as_p}}
+{%csrf_token%}
+<input type="submit" class="btn btn-primary" name="submit" value="Register" >
+</div>
+{%endblock%}

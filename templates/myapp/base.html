@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/edit.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: right;
+  width: 20%;
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.main {
+  float: right;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
+  <style>
+  body,html{
+}
+.bg {
+  /* The image used */
+  background-image: url("{% static "images/16.jpg" %}");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+/*  background-image: radial-gradient(red, yellow, green);*/
+}
+</style>
+<style>
+.sidenav {
+  width: 240px;
+  position: fixed;
+  z-index: 1;
+
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: pink;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+  {% block xyz %}{% endblock %}
+    </head>
+  <body>
+      <div class="bg">
+    <div class="header" >
+      <marquee   attribute_name = "attribute_value"....more attributes>
+       <h4 style="color:orange;"> Jai Sairam-Saibaba Life and Teachings: गुरुर्ब्रह्मा गुरुर्विष्णु र्गुरुर्देवो महेश्वरः
+     गुरु साक्षात परब्रह्मा तस्मै श्रीगुरवे नमः</h4>
+     </marquee>
+      </div>
+<ul class="nav nav-expand-lg navbar-dark bg-dark sticky-top nav-tabs justify-content-end nav-fixed">
+
+      <li class="nav-item">
+        <a class="nav-link active" href="/home"><i class="fa fa-fw fa-home"></i>Home</a>
+      </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/page1">Saibaba Life</a>
+  </li>
+
+
+
+  <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pooja Vidhi
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/nava">Navaguruvaar</a>
+            <a class="dropdown-item" href="/divya">Divya Pooja</a>
+            <a class="dropdown-item" href="/vrat">Vratam</a>
+            <a class="dropdown-item" href="/diyas">5 Diyas pooja</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Thursday pooja </a>
+          </div>
+        </li>
+
+  <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Devotees
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/mahalsapathi">Mahalsapathi</a>
+            <a class="dropdown-item" href="/tatya">Tatya</a>
+            <a class="dropdown-item" href="/shyama">Shyama</a>
+            <a class="dropdown-item" href="/baijamai">Bhaijamai</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/more">More</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/saibaba">Who is Saibaba</a>
+                  <a class="dropdown-item" href="/chalisa">Chalisa</a>
+                  <a class="dropdown-item" href="/stotram">Kastanivaran Stotram</a>
+                  <a class="dropdown-item" href="/shiridi">Shiridi Tour</a>
+                  <a class="dropdown-item" href="/neem">Gurusthan</a>
+                  <a class="dropdown-item" href="/archana">108 names</a>
+                  <a class="dropdown-item" href="/stavanamanjari">StavanaManjari</a>
+                  <a class="dropdown-item" href="/udi">Udimantram</a>
+                  <a class="dropdown-item" href="/astakam">Astakam</a>
+                  <a class="dropdown-item" href="/answers">Baba Answers</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="/count">Views</a>
+                </div>
+
+              </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/page5">Satcharitra</a>
+  </li>
+  <li  class="nav-item">
+    <a class="nav-link" href="/arthi">Aarthi</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="/feedback">Feedback</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/page3">photos</a>
+  </li>
+</ul>
+ <br>
+
+<img src="http://www.saibabashirditemple.in/images/saibaba-hindi.gif"
+style="position:fixed; bottom:10px; left:5px; border:0px; width:100px; height:100px;">
+{% block body_block %}
+{%endblock%}
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </div>
+  </body>
+
+</html>

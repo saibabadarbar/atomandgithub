@@ -1,0 +1,133 @@
+.background1 {
+	BACKGROUND: #c32800
+}
+.background2 {
+	BACKGROUND: #b4c5de
+}
+.background3 {
+	BACKGROUND: #ffffff
+}
+.background4 {
+	BACKGROUND: #dae2ec
+}
+.background5 {
+	BACKGROUND: #f0f0f0
+}
+.background6 {
+	BACKGROUND: #a0d0ff
+}
+.content {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.sideBar TD.hover {
+	BACKGROUND-COLOR: white
+}
+.content1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #8560a8; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.content2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+.content3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Verdana, Arial, Helvetica, sans-serif
+}
+.content4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Comic Sans MS, Verdana, Arial, Helvetica, sans-serif
+}
+.content5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ffffff; FONT-FAMILY: Comic Sans MS, Verdana, Arial, Helvetica, sans-serif
+}
+TABLE.text {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+TABLE {
+	CURSOR: text
+}
+TD {
+	FONT-SIZE: 2ex; CURSOR: default
+}
+.sampletable {
+	BORDER-RIGHT: gray thick groove; BORDER-TOP: gray thick groove; BORDER-LEFT: gray thick groove; BORDER-BOTTOM: gray thick groove; BORDER-COLLAPSE: separate; BACKGROUND-COLOR: #000000
+}
+#content {
+	WIDTH:1128px;MARGIN-TOP: 15px; DISPLAY: inline; FONT-SIZE: 11px; FLOAT: left; COLOR: #494848; LINE-HEIGHT: 15px; FONT-FAMILY: Arial, Helvetica, sans-serif; POSITION: relative
+}
+
+IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.verticalMiddle {
+	VERTICAL-ALIGN: middle
+}
+.guidedLeftMenuDiv {
+	FLOAT: left; OVERFLOW-Y:scroll; WIDTH: 236px; POSITION: relative;PADDING-LEFT: 8px;height: 860px;
+}
+.guidedLeftDiv {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 218px; POSITION: relative
+}
+.guidedLeftBg {
+	BACKGROUND-IMAGE: url(../images/bg_guided_body.gif); WIDTH: 218px; BACKGROUND-REPEAT: repeat-y
+}
+.marginTop10 {
+	MARGIN-TOP: 10px
+}
+.guidedLeftBgTop {
+	BACKGROUND-IMAGE: url(../images/bg_guided_top.gif); WIDTH: 218px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 10px
+}
+.guidedLeftBgHeader {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 11px; WIDTH: 197px
+}
+.guidedLeftCategoryHeader {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 11px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(../images/bg_guided_category_head50.gif); PADDING-BOTTOM: 4px; WIDTH: 218px; COLOR: #c47b14; PADDING-TOP: 4px; BACKGROUND-REPEAT: no-repeat
+}
+.guidedLeftCategoryList {
+	LINE-HEIGHT: 13px;WIDTH:225px;
+}
+.guidedLeftCategoryList INPUT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; HEIGHT: 13px
+}
+.guidedLeftCategoryList UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 13px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.guidedLeftCategoryList LI {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 13px; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.guidedLeftCategoryList LI A {
+	DISPLAY: block; COLOR: #494848; TEXT-DECORATION: none
+}
+.guidedLeftCategoryList LI A:link {
+	COLOR: #494848; TEXT-DECORATION: none
+}
+.guidedLeftCategoryList LI A:active {
+	COLOR: #494848; TEXT-DECORATION: none
+}
+.guidedLeftCategoryList LI A:visited {
+	COLOR: #494848; TEXT-DECORATION: none
+}
+.guidedLeftCategoryList LI A:hover {
+	COLOR: #494848; TEXT-DECORATION: underline
+}
+.guidedLeftCategoryList LI:hover {
+	BACKGROUND-COLOR: #eeeeee;  opacity: .90
+}
+.rustLink {
+	COLOR: #c47b14
+}
+.rustLink A {
+	COLOR: #c47b14; TEXT-DECORATION: none
+}
+.rustLink A:link {
+	COLOR: #c47b14; TEXT-DECORATION: none
+}
+.rustLink A:active {
+	COLOR: #c47b14; TEXT-DECORATION: none
+}
+.rustLink A:visited {
+	COLOR: #c47b14; TEXT-DECORATION: none
+}
+.rustLink A:hover {
+	COLOR: #c47b14; TEXT-DECORATION: underline
+}
+.guidedRightContentDiv {
+	FLOAT: left; MARGIN-LEFT: 80px; OVERFLOW: hidden; WIDTH: 800px
+}

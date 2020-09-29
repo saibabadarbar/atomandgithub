@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+<h1>hello</h1>
+{%if dev_list%}
+<table>
+  <thead>
+    <th>name</th>
+    <th>email</th>
+    <th>Feedback</th>
+  </thead>
+  {%for dev in dev_list%}
+  <tr>
+    <td>{{dev.name}}</td>
+    <td>{{dev.email}}</td>
+    <td>{{dev.Feedback}}</td>
+  </tr>
+  {%endfor%}
+</table>
+{%else%}
+<p>No devotees records found</p>
+{%endif%}
+{%endblock%}

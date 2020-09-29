@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends 'myapp/base.html'%}
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+<div class="container" align="center">
+  <h1>Devotees Feedback form</h1>
+  <p>Your feedback helps us improve more</p>
+  <form method="post">
+    {{form.as_p}}
+    {%csrf_token%}
+    <input type="submit" name="" value="Submit feedback">
+  </form>
+  <br><br><br><br><br>
+    <br><br><br><br><br>  <br><br><br><br><br>  <br><br><br><br><br>  <br><br><br><br><br>
+  </div>
+{%endblock%}

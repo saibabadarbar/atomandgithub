@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{%extends 'myapp/base1.html'%}
+{%load static%}
+{%block title_block%}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+ Sairam {%endblock%}
+{%block content%}
+<div class="container">
+<h1>{{post.title}}</h1>
+<p id='date'>Published on {{post.publish}} by {{post.title}}</p>
+{{post.body|linebreaks}}
+
+<br><a href="{{post.id}}/share" class="btn btn-lg">share by email</a>
+</div>
+{%endblock%}

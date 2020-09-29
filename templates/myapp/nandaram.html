@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends 'myapp/base.html'%}
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+<div class="container">
+
+     <h1 id="col"> Nandaram Sivaram Marwadi</h1><hr>
+     <p style="color:white;">
+        <img src="{% static "images/nandaram.jpg" %}" alt="baba" width="200px" height="220px">
+        <br>Nandaram Sivaram Marwadi<br><hr>
+ <p style="color:white;">
+
+At the time of the second visit of Plague at Shirdi, i.e., S.1833 (1911 A.D.) the villagers were quickly leaving the village. Some men were seated one day at the Maruti temple and as I passed by, remarked that my eyes were red (with fever) and that I was evidently to be struck down by plague. I was startled to hear this. I got up on horseback and went to the Maruti temple. People advised me to pray to Maruti, with an offer of coconut and oil, to save me from death. I prayed and made those offerings. I thought I should fly from Shirdi and go to Ekruka. So I went to Baba for permission. Baba however dissuaded me from leaving the village. He assured me that I was not going to die. "I will not let you die, till I die" he said and gave me Udhi. I stayed on in the village and my fever abated and finally disappeared.
+<br>  <img src="{% static "images/nanda.jpg" %}" alt="baba" width=100%>
+
+{%endblock%}

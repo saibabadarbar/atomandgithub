@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{%extends 'myapp/base1.html'%}
+{%load static%}
+{%block title_block%}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+ {%endblock%}
+{%block content%}
+<div class="paginator">
+<span>
+{%if page.has_previous%}
+<a href="?page={{page.previous_page_number}}">Previous</a>
+{%endif%}
+</span>
+<span class='current'>
+page {{page.number}} of {{page.paginator.num_pages}}
+</span>
+ <span>
+ {%if page.has_next%}
+ <a href="?page={{page.next_page_number}}">Next</a>
+ {%endif%}
+ </span>
+ <br>
+ </div>
+{%endblock%}

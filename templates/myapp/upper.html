@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{%extends 'myapp/base.html'%}
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+<div class="container">
+
+     <h1 id="col">Bayyaji Bai</h1><hr>
+     <p style="color:white;">
+        <img src="{% static "images/mai.jpg" %}" alt="baba" width="200" height="260"> <br>Bayyaji Bai<br><hr>
+ <p style="color:white;">
+{% for r in data_list% }
+     </p>
+
+
+ <hr>
+</div>
+<br><br><br><br><br><br>
+{%endblock%}

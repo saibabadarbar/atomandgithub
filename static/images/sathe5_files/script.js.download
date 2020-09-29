@@ -1,0 +1,105 @@
+function collapse(obj){
+  var e=document.getElementById(obj);
+  if(!e)return true;
+ if(e.style.display=="none"){
+  e.style.display = "block"
+ } else {
+  e.style.display = 'none'
+ }
+ return true;
+}
+//highlight the clicked menu
+var preElement = "";
+function makeBold(obj) {
+	if(preElement){
+		preElement.className = "normal";
+	}
+	obj.className="current";
+	preElement = obj;
+}
+
+//show hide funtion for images swap
+imgout=new Image(9,9);
+imgin=new Image(9,9);
+imgout_blue=new Image(9,9);
+imgin_blue=new Image(9,9);
+
+imgout.src="../../../images/icon_guided_plus_box.gif";
+imgin.src = "../../../images/icon_guided_minus_box.gif";
+imgin.alt="Expand";
+
+imgout_blue.src = "../../../images/icon_plus_box_grey.gif";
+imgin_blue.src = "../../../images/icon_minus_box_grey.gif";
+
+
+function filter(imagename,objectsrc){
+	if (document.images){
+		document.images[imagename].src=eval(objectsrc+".src");
+	}
+}
+
+function collapseimg(id) { 
+	
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		if (document.getElementById(id).style.display == "none"){
+			document.getElementById(id).style.display = 'block';
+			filter(("img"+id),'imgin');			
+		} else {
+			filter(("img"+id),'imgout');
+			document.getElementById(id).style.display = 'none';			
+		}	
+	} else { 
+		if (document.layers) {	
+			if (document.id.display == "none"){
+				document.id.display = 'block';
+				filter(("img"+id),'imgin');
+			} else {
+				filter(("img"+id),'imgout');	
+				document.id.display = 'none';
+			}
+		} else {
+			if (document.all.id.style.visibility == "none"){
+				document.all.id.style.display = 'block';
+			} else {
+				filter(("img"+id),'imgout');
+				document.all.id.style.display = 'none';
+			}
+		}
+	}
+}
+
+function collapseimg_blue(id) { 
+	
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		if (document.getElementById(id).style.display == "none"){
+			document.getElementById(id).style.display = 'block';
+			filter(("img"+id),'imgin_blue');			
+		} else {
+			filter(("img"+id),'imgout_blue');
+			document.getElementById(id).style.display = 'none';			
+		}	
+	} else { 
+		if (document.layers) {	
+			if (document.id.display == "none"){
+				document.id.display = 'block';
+				filter(("img"+id),'imgin_blue');
+			} else {
+				filter(("img"+id),'imgout_blue');	
+				document.id.display = 'none';
+			}
+		} else {
+			if (document.all.id.style.visibility == "none"){
+				document.all.id.style.display = 'block';
+			} else {
+				filter(("img"+id),'imgout_blue');
+				document.all.id.style.display = 'none';
+			}
+		}
+	}
+}
+
+function div_scroll(id)
+{
+	document.getElementById(id).scrollIntoView();
+	self.scrollTo(0,0);
+}

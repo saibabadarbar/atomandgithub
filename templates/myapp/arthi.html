@@ -1,0 +1,23 @@
+  <!DOCTYPE html>
+  {%extends 'myapp/base.html'%}
+  {%load static%}
+  {% block xyz %}
+  <link rel="stylesheet" href="{%static "css/edit.css" %}">
+  {% endblock %}
+  {% block body_block %}
+  <div class="container">
+   <p style="color:white;">
+     <br>
+       <img src="{% static "images/arthi1.jpg" %}" alt="baba" width="100%" >
+       <br> <br><hr>
+<a href="https://www.omnisai.org/teluguaartis" <button type="button" class="btn btn-success">Arthi in Telugu</a>
+ <hr><br>
+<a href="https://www.omnisai.org/tamilaartis" <button type="button" class="btn btn-success">Arthi in Tamil</a>
+<hr><br>
+<a href="https://www.omnisai.org/kannadaartis" <button type="button" class="btn btn-success">Arthi in Kannada</a>
+<hr><br>
+<a href="https://www.omnisai.org/aartis" <button type="button" class="btn btn-success">Arthi in Marathi</a>
+<hr><br>
+
+<br><br><br><br><br><br><br><br><br><br>
+{%endblock%}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{%extends 'myapp/base1.html'%}
+{%load static%}
+{%block title_block%}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{%endblock%}
+{%block content%}
+<div class="container">
+  <br><br>
+<h1>Sairam Experiences</h1>
+{%for post in post_list%}
+<p id='date'> published:{{post.publish}} by title {{post.title}}</p>
+{{post.body|truncatewords:30|linebreaks}}
+<h2><a href="{{post.get_absolute_url}}"> {{post.title}}</a></h2>
+{%endfor%}
+{% include 'myapp/pagination.html' with page=post_list%}
+</div>
+{%endblock%}

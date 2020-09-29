@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{%extends 'myapp/base.html'%}
+{%load static%}
+{% block xyz %}
+<link rel="stylesheet" href="{%static "css/edit.css" %}">
+{% endblock %}
+{% block body_block %}
+<div class="container">
+
+     <h1 id="col">Chakra Narayana</h1><hr>
+     <p style="color:white;">
+        <img src="{% static "images/chakra.jpg" %}" alt="baba" width=100%>
+        <img src="{% static "images/chakra1.jpg" %}" alt="baba" width=100%>
+
+
+
+  {%endblock%}
